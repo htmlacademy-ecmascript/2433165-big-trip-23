@@ -10,10 +10,14 @@ module.exports = {
     clean: true, // Удаляем предыдущую сборку перед созданием новой
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   devtool: 'source-map', // Генерируем карту исходного кода
 <<<<<<< HEAD
   plugins: [ // Подключаем плагины
 =======
+=======
+  devtool: "source-map", // Генерируем карту исходного кода
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
 =======
   devtool: "source-map", // Генерируем карту исходного кода
 >>>>>>> parent of 7648bd0 (Выполнил 1.24)
@@ -49,6 +53,7 @@ module.exports = {
           options: {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             presets: ['@babel/preset-env']
           },
         },
@@ -64,11 +69,15 @@ module.exports = {
 =======
             presets: ["@babel/preset-env"],
 >>>>>>> parent of 7648bd0 (Выполнил 1.24)
+=======
+            presets: ["@babel/preset-env"],
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
           },
         },
       },
     ],
   },
+<<<<<<< HEAD
 <<<<<<< HEAD
   resolve: {
     alias: {
@@ -77,6 +86,9 @@ module.exports = {
   },
 >>>>>>> master
 };
+=======
+};
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
 =======
 };
 >>>>>>> parent of 7648bd0 (Выполнил 1.24)
