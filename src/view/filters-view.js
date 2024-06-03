@@ -1,7 +1,7 @@
-import { RenderPosition, createElement, render } from "../render";
+import { createElement } from '../render';
 
-function createFilters() {
- return `
+function createFilterTemplete() {
+  return `
     <form class="trip-filters" action="#" method="get">
         <div class="trip-filters__filter">
             <input id="filter-everything" class="trip-filters__filter-input  visually-hidden" type="radio" name="trip-filter" value="everything">
@@ -21,30 +21,22 @@ function createFilters() {
         </div>
         <button class="visually-hidden" type="submit">Accept filter</button>
     </form>
- `
+ `;
 }
 
-class Filters{
-    // constructor(callback){
-    //     this.callback = callback;
-    //     this.element = null;
-    // }
-    getTemplate(){
-        return createFilters();
+class Filters {
+  getTemplate() {
+    return createFilterTemplete();
+  }
+  getElement() {
+    if (!this.element) {
+      this.element = createElement(this.getTemplate());
     }
-    getElement(){
-        if(!this.element){
-            this.element = createElement(this.getTemplate());
-        }
-        return this.element;
-    }
-    renderObject(){
-        const documentRoot = document.querySelector('.trip-controls__filters');
-        render(this.getElement(), documentRoot, RenderPosition.BEFOREEND);
-    }
-    removeElement(){
-        this.element = null;
-    }
+    return this.element;
+  }
+  removeElement() {
+    this.element = null;
+  }
 }
 
 export default Filters;
