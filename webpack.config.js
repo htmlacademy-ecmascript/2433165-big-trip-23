@@ -1,30 +1,34 @@
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
-const HtmlPlugin = require('html-webpack-plugin');
+const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
+const HtmlPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/main.js', // Точка входа
+  entry: "./src/main.js", // Точка входа
   output: {
-    filename: 'bundle.[contenthash].js', // Имя бандла
-    path: path.resolve(__dirname, 'build'), // Директория для файлов сборки
+    filename: "bundle.[contenthash].js", // Имя бандла
+    path: path.resolve(__dirname, "build"), // Директория для файлов сборки
     clean: true, // Удаляем предыдущую сборку перед созданием новой
   },
+<<<<<<< HEAD
   devtool: 'source-map', // Генерируем карту исходного кода
 <<<<<<< HEAD
   plugins: [ // Подключаем плагины
 =======
+=======
+  devtool: "source-map", // Генерируем карту исходного кода
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
   plugins: [
     // Подключаем плагины
 >>>>>>> master
     new HtmlPlugin({
-      template: 'public/index.html',
+      template: "public/index.html",
     }),
     new CopyPlugin({
       patterns: [
         {
-          from: 'public',
+          from: "public",
           globOptions: {
-            ignore: ['**/index.html'],
+            ignore: ["**/index.html"],
           },
         },
       ],
@@ -41,8 +45,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
+<<<<<<< HEAD
 <<<<<<< HEAD
             presets: ['@babel/preset-env']
           },
@@ -56,11 +61,15 @@ module.exports = {
   },
 =======
             presets: ['@babel/preset-env'],
+=======
+            presets: ["@babel/preset-env"],
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
           },
         },
       },
     ],
   },
+<<<<<<< HEAD
   resolve: {
     alias: {
       '@view': path.resolve(__dirname, 'src/view/'),
@@ -68,3 +77,6 @@ module.exports = {
   },
 >>>>>>> master
 };
+=======
+};
+>>>>>>> parent of 7648bd0 (Выполнил 1.24)
