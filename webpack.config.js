@@ -10,7 +10,12 @@ module.exports = {
     clean: true, // Удаляем предыдущую сборку перед созданием новой
   },
   devtool: 'source-map', // Генерируем карту исходного кода
+<<<<<<< HEAD
   plugins: [ // Подключаем плагины
+=======
+  plugins: [
+    // Подключаем плагины
+>>>>>>> master
     new HtmlPlugin({
       template: 'public/index.html',
     }),
@@ -26,13 +31,19 @@ module.exports = {
     }),
   ],
   module: {
+<<<<<<< HEAD
     rules: [ // Добавляем лоадеры
+=======
+    rules: [
+      // Добавляем лоадеры
+>>>>>>> master
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
+<<<<<<< HEAD
             presets: ['@babel/preset-env']
           },
         },
@@ -43,4 +54,17 @@ module.exports = {
       },
     ],
   },
+=======
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
+  resolve: {
+    alias: {
+      '@view': path.resolve(__dirname, 'src/view/'),
+    },
+  },
+>>>>>>> master
 };
