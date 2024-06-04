@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
-* Студент: [Никита](https://up.htmlacademy.ru/ecmascript/23/user/2433165).
-* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin)
+- Студент: [Никита](https://up.htmlacademy.ru/ecmascript/23/user/2433165).
+- Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
