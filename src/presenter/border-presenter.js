@@ -5,7 +5,7 @@ import EditPoint from '@view/edit-point-view';
 import MainList from '@view/list-view';
 import Point from '@view/point-in-list-view';
 
-const Counter = 3;
+const сounter = 3;
 
 class Presenter {
   sortComponent = new Sort();
@@ -20,7 +20,7 @@ class Presenter {
     render(this.mainList, this.component);
     render(new EditPoint(), this.component);
 
-    for (let i = 0; i < Counter; i++) {
+    for (let i = 0; i < сounter; i++) {
       render(new Point(), this.component);
     }
 
